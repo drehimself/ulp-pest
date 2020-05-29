@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/postspest', function () {
+    return 'hi';
+});
+
 Route::get('/', 'PostController@index')->name('posts.index');
 
 Route::get('/posts/create', 'PostController@create')->name('posts.create')->middleware('auth');
